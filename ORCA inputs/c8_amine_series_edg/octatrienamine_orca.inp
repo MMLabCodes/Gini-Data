@@ -1,0 +1,51 @@
+! B3LYP 6-31+g** 
+
+        %scf Convergence verytight
+        maxiter 300 end
+        %maxcore 2000
+        %pal nprocs 1 end
+
+        %method
+        Grid        2
+        FinalGrid   4
+        end
+
+        %output
+        Print[ P_Hirshfeld] 1
+        Print[ P_Mayer] 1
+        end
+
+        %plots
+        dim1 355.1551280897923
+        dim2 296.2145702249385
+        dim3 257.30510929395615
+        Format Gaussian_Cube
+        ElDens("octatrienamine_rho.cube");
+        MO("octatrienamine_homo.cube",33,0);
+        MO("octatrienamine_lumo.cube",34,0);
+        end
+         
+*xyz 0 1 
+C   1.101 0.111 -0.013
+C   2.594 0.08 -0.033
+C   3.287 -0.89 -0.648
+C   4.731 -0.938 -0.678
+C   5.402 -1.92 -1.301
+C   6.848 -1.989 -1.347
+C   7.575 -2.951 -1.949
+N   7.065 -4.033 -2.613
+C   9.084 -2.877 -1.907
+H   0.753 0.988 0.543
+H   0.698 -0.779 0.48
+H   0.698 0.177 -1.028
+H   3.11 0.888 0.48
+H   2.749 -1.689 -1.155
+H   5.269 -0.139 -0.173
+H   4.847 -2.708 -1.799
+H   7.373 -1.181 -0.84
+H   6.067 -4.147 -2.728
+H   7.687 -4.687 -3.073
+H   9.448 -2.004 -1.354
+H   9.489 -2.819 -2.923
+H   9.492 -3.77 -1.422
+*

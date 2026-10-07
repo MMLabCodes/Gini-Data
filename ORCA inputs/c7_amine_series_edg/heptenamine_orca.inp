@@ -1,0 +1,52 @@
+! B3LYP 6-31+g** 
+
+        %scf Convergence verytight
+        maxiter 300 end
+        %maxcore 2000
+        %pal nprocs 1 end
+
+        %method
+        Grid        2
+        FinalGrid   4
+        end
+
+        %output
+        Print[ P_Hirshfeld] 1
+        Print[ P_Mayer] 1
+        end
+
+        %plots
+        dim1 336.9003737142076
+        dim2 264.8451165360455
+        dim3 293.79572078386724
+        Format Gaussian_Cube
+        ElDens("heptenamine_rho.cube");
+        MO("heptenamine_homo.cube",31,0);
+        MO("heptenamine_lumo.cube",32,0);
+        end
+         
+*xyz 0 1 
+C   0.99 -0.018 -0.091
+C   2.51 -0.015 -0.087
+C   3.071 0.644 1.174
+C   4.603 0.639 1.163
+C   5.188 1.267 2.398
+C   6.504 1.45 2.622
+N   7.486 1.116 1.722
+C   6.97 2.085 3.909
+H   0.615 -0.495 -1.002
+H   0.596 1.002 -0.054
+H   0.596 -0.571 0.768
+H   2.871 0.515 -0.976
+H   2.871 -1.048 -0.158
+H   2.703 0.111 2.06
+H   2.703 1.676 1.244
+H   4.956 1.179 0.276
+H   4.953 -0.398 1.092
+H   4.479 1.604 3.151
+H   7.232 0.458 0.992
+H   8.424 1.005 2.096
+H   6.137 2.404 4.545
+H   7.581 2.967 3.693
+H   7.576 1.377 4.486
+*
